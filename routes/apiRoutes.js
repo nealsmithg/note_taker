@@ -9,8 +9,6 @@ router.get("/notes", (req, res) => {
 });
 
 router.post("/notes", (req, res) => {
-    console.log(req.body);
-    console.log(uuidv4());
     const {title, text} = req.body;
     if (req.body){
         const newNote = {
